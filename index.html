@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+		<link rel="stylesheet" href="custom.css" id="custom-css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="concave">
+					<p class="fragment">
+						<div class="animate one"><span>A</span>&nbsp;<span><span>little</span>&nbsp;<span>bit</span>&nbsp;<span>about</span>&nbsp;<span>the</span>&nbsp;<span>target</span>&nbsp;<span>of</span>&nbsp;<span>this</span>&nbsp;<span>video</span></div>
+						<div class="img__wrapper">
+							<img class="rs_img" src="assets/img/logo.svg" alt="school"></br>
+							<img class="main_img" src="assets/img/html.png" alt="html">
+							<img class="main_img" src="assets/img/css.jpg" alt="css">
+							<img class="main_img" src="assets/img/js.jpg" alt="js">
+						</div>
+					</p>
+				</section>
+				<section data-transition="concave">
+					<p id="header-slide" class="fragment fragment fade-up">Some theory</p>
+					<p id="theory" class="fade-in-then-out">
+						First of all, Audio API is very powerful ability for controlling audio on the Web.
+					</p>
+					<p id="theory2" class="fade-in-then-out">
+						It allows developers to choose audio sources, create audio visualizations,
+						and even apply spatial effects.
+						Basic audio operations are performed with audio nodes, which are linked together to form an audio routing graph.
+					</p>
+				</section>
+				<section data-transition="concave">
+				</section>
+			</div>
+		</div>
+		<script src="./custom.js"></script>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
