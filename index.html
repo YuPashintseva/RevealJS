@@ -40,9 +40,44 @@
 					</p>
 				</section>
 				<section data-transition="concave">
+					A simple, typical workflow for web audio would look something like this:
+					<p class="fragment">
+						<ul>
+							<li>Create audio context</li>
+							<li>Inside the context, create sources — such as audio</li>
+							<li>Create effects nodes, such as reverb or compressor</li>
+							<li>Choose final destination of audio</li>
+							<li>Connect the sources up to the effects, and the effects to the destination.</li>
+					  	</ul>
+					</p>
+				</section>
+				<section data-transition="concave">
+					Why not just use audio?!
+					<p class="fragment">
+						If you want make something simple like add audio to the Web and just play and stop it, audio tag is enough. But audio has several limitation that
+keep it rfom being reliable for audio-intensive applications. There are some restrinctions related to audio:
+						<ul>
+							<li>limited number of samples can be played at once</li>
+							<li>no real-time effects</li>
+							<li>Create effects nodes, such as reverb or compressor</li>
+							<li>no audio synthesis</li>
+							<li>no way to analyze sound or create visializations</li>
+					  	</ul>
+					</p>
+				</section>
+				<section data-transition="concave">
+					<div id="fileWrapper" class="file_wrapper">
+						<div id="info"></div>
+						<input type="file" id="uploadedFile"></input>
+					  </div>
+					  
+					  <div id="visualizer_wrapper">
+						<canvas id='canvas' width="800" height="350"></canvas>
+					  </div>
 				</section>
 			</div>
 		</div>
+		
 		<script src="./custom.js"></script>
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
