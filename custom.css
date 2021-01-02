@@ -126,6 +126,7 @@ a, a:link, a:visited {
 
 #theory, #theory2 {
   font-size: 32px;
+  text-align: left;
 }
 
 #header-slide {
@@ -142,4 +143,14 @@ a, a:link, a:visited {
 
 #visualizer_wrapper {
 	text-align: center;
+}
+
+.parallel {
+  display: flex;
+  font-size: 32px;
+  text-align: left;
+}
+
+.parallel_image {
+  width: 310%;
 }
