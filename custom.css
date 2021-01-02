@@ -154,3 +154,8 @@ a, a:link, a:visited {
 .parallel_image {
   width: 310%;
 }
+
+.simple-text {
+  font-size: 32px;
+  text-align: left;
+}

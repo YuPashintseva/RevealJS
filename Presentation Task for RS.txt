@@ -1,0 +1,52 @@
+Intro (A little bit about the target of this video)
+
+This video made specially for RS SCHOOL project. I'm passing this course since 7th of September 2020. 
+I've no previous expiriense as a front-end developer and many of things were interesting, partially difficult for understand but still very exiting.
+In this video I want to tell you about Audio API and some features related to it.
+
+Main Part (I) - Some theory
+
+First of all, Audio API is very powerful tool for controlling audio on the Web. It allow developers to choose audio sources, create audio visualizations,
+and even apply spatial effects. Basic audio operations are performed with audio nodes, which are linked together to form an audio routing graph.
+
+A simple, typical workflow for web audio would look something like this:
+1. Create audio context
+2. Inside the context, create sources — such as <audio>, oscillator, stream
+3. Create effects nodes, such as reverb, biquad filter, panner, compressor
+4. Choose final destination of audio, for example your system speakers
+5. Connect the sources up to the effects, and the effects to the destination.
+
+Main Part (II) - Why not just use <audio>?!
+If you want make something simple like add audio to the Web and just play and stop it, audio tag is enough. But audio has several limitation that
+keep it rfom being reliable for audio-intensive applications. There are some restrinctions related to <audio>:
+1. limited number of samples can be played at once
+2. no real-time effects
+3. no audio synthesis
+4. no way to analyze sound or create visializations
+
+Main Part (III) - Dive deep to the history
+Let's take a look at the picture of the evolution of sound on the Web.
+We can compare bgsound with homo habilis, flash with homo erectus, audio with neanderthalesis and Audio API with homo sapiens. Funny comparison in my opinion.
+
+All these tags are deascribed on the next slide.
+
+<bgsound>
+It has four attributes.
+Balance - defines how the volume will be divided between the speakers.
+Loop - this attribute indicates the number of times a sound is to be played
+Src - This attribute specifies the URL of the sound file to be played
+
+flash - Sound files, which come in a variety of formats, are handled differently and inconsistently by different browsers and on different computers
+
+<audio> - is used to embed sound content in documents. It may contain one or more audio sources
+autoplay -A Boolean attribute: if specified, the audio will automatically begin playback as soon as it can do so or not
+controls - If this attribute is present, the browser will offer controls to allow the user to control audio playback, including volume, seeking, and pause/resume playback.
+currentTime - current playback position, in seconds, of the audio
+loop - if specified, the audio player will automatically seek back to the start upon reaching the end of the audio.
+src - the URL of the audio to embed
+muted - a Boolean attribute that indicates whether the audio will be initially silenced
+
+Main Part (IV) - Dive deep to the history
+In this example I want to show the result of audio visialization that that has been made by using Audio API.
+
+

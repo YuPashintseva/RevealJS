@@ -31,7 +31,7 @@
 				<section data-transition="concave">
 					<p id="header-slide" class="fragment fragment fade-up">Some theory</p>
 					<p id="theory" class="fade-in-then-out">
-						First of all, Audio API is very powerful ability for controlling audio on the Web.
+						First of all, Audio API is very powerful tool for controlling audio on the Web.
 					</p>
 					<p id="theory2" class="fade-in-then-out">
 						<div class="parallel">
@@ -50,11 +50,11 @@
 					<div id="header-slide">Workflow for web audio API: </div>
 					<p class="fragment">
 						<ul>
-							<li>Create audio context</li>
-							<li>Inside the context, create sources — such as &lt;audio&gt;</li>
-							<li>Create effects nodes, such as reverb or compressor</li>
-							<li>Choose final destination of audio</li>
-							<li>Connect the sources up to the effects, and the effects to the destination.</li>
+							<li class="simple-text">Create audio context</li>
+							<li class="simple-text">Inside the context, create sources — such as &lt;audio&gt;</li>
+							<li class="simple-text">Create effects nodes, such as reverb or compressor</li>
+							<li class="simple-text">Choose final destination of audio</li>
+							<li class="simple-text">Connect the sources up to the effects, and the effects to the destination.</li>
 					  	</ul>
 					</p>
 					<p class="fragment">
@@ -85,17 +85,27 @@ keep it from being reliable for audio-intensive applications. There are some res
 					<img src='/assets/img/evolution.png' alt="evolution of audio api">
 				</p>
 			</section>
-				<section data-transition="concave">
-					<div id="fileWrapper" class="file_wrapper">
-						<div id="info"></div>
-						<input type="file" id="uploadedFile"></input>
-					  </div>
-					  
-					  <div id="visualizer_wrapper">
-						<canvas id='canvas' width="800" height="350"></canvas>
-					  </div>
-				</section>
-			</div>
+			<section data-transition="concave">
+				<div id="header-slide">&lt;bgsound&gt;</div>
+				<div class="simple-text">Sets up a sound file to play in the background while the page is used. Attributes: balance, loop, src, volume</div>
+				<div id="header-slide">flash</div>
+				<div class="simple-text">It's a plug-in which comes with most browsers that controls sound files, which come in a variety of formats, are handled differently and inconsistently by different browsers and on different computers</div>
+				<div id="header-slide">&lt;audio&gt;</div>
+				<div class="simple-text">It's used to embed sound content in documents. It may contain one or more audio sources. Attributes: autoplay, controls, currentTime, loop, src, muted</div>
+			</section>
+			<section data-transition="concave">
+				<div id="fileWrapper" class="file_wrapper">
+					<div id="info"></div>
+					<input type="file" id="uploadedFile"></input>
+					</div>
+					<div id="visualizer_wrapper">
+					<canvas id='canvas' width="800" height="350"></canvas>
+					</div>
+			</section>
+			<section data-transition="concave">
+				<div id="header-slide">Thank you for attention!</div>
+			</section>
+			
 		</div>
 		
 		<script src="./custom.js"></script>
